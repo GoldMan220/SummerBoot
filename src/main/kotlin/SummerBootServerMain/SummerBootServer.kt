@@ -31,7 +31,6 @@ fun main(args: Array<String>) {
 suspend fun handleSocket(socket: Socket){
     val bufferReader = BufferedReader(InputStreamReader(socket.getInputStream()))
     while (true){
-        println(">>>")
         delay(1000 )
         while (bufferReader.ready()){
             println("---")
